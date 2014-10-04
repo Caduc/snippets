@@ -22,11 +22,11 @@ def put(name, snippet, filename):
     logging.debug("Write successful")
     return name, snippet
 
-def get(name, filename):
-    """ Get snippets that have been previous stored by the put function"""
-    logging.info ("finding snippet for the name {} from {} ".format(name, filename))
-    logging.degug ("Opening file for reading")
-    with open (filename, "r") as fn:
+#def get(name, filename):
+#    """ Get snippets that have been previous stored by the put function"""
+#    logging.info ("finding snippet for the name {} from {} ".format(name, filename))
+#    logging.degug ("Opening file for reading")
+#    with open (filename, "r") as fn:
 #       for row in fn:
 #           if name = The-Value-inputted-after-'get'-in-commandline:
 #               Return the associated snippet and /n
