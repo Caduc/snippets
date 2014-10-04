@@ -28,7 +28,7 @@ def make_parser():
     description ="Store and retrieve snippets of text"
     parser = argparse.ArgumentParser(description=description)
 
-    subparsers = parser.add_subparsers(help="available commands")
+    subparsers = parser.add_subparsers(dest="command", help="available commands")
 
     # Subparse for the put command
     logging.debug("Constructing put subparse")
@@ -45,6 +45,14 @@ def main():
     logging.info("Starting snippets")
     parser = make_parser()
     arguments = parser.parse_args(sys.argv[1:])
+    # Convert parsed arguments from Namespace to dictionary
+    arguments = vars(arguments)
+    command = arguments.pop("command")
+
+    if command == "put":
+        name, snippet = put(**arguments)
+        print "Stored '{}' as '{}'".format(snippet, name)
+        pass
 
 if __name__ == '__main__':
     main()
