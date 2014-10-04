@@ -28,6 +28,15 @@ def make_parser():
     description ="Store and retrieve snippets of text"
     parser = argparse.ArgumentParser(description=description)
 
+    subparsers = parser.add_subparsers(help="available commands")
+
+    # Subparse for the put command
+    logging.debug("Constructing put subparse")
+    put_parse = subparsers.add_parser("put", help="Store a snippet")
+    put_parse.add_argument("name", help="the name of the snippet")
+    put_parse.add_argument("snippet", help="the snippet text")
+    put_parse.add_argument("filename", default="snippets.csv", nargs="?", help="The snippet filename")
+
     return parser
 
 
@@ -39,7 +48,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 
 
 
