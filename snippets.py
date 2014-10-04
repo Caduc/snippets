@@ -4,9 +4,11 @@
 
 import logging
 import csv
+import argparse
+import sys
 
 #set basic config
-logging.BasicConfig(filename"output.log", level=logging.DEBUG)
+logging.basicConfig(filename="output.log", level=logging.DEBUG)
 
 
 def put(name, snippet, filename):
@@ -19,3 +21,26 @@ def put(name, snippet, filename):
         writer.writerow([name, snippet])
     logging.debug("Write successful")
     return name, snippet
+
+def make_parser():
+    """ Construct the command line parser """
+    logging.info("Constructing parser")
+    description ="Store and retrieve snippets of text"
+    parser = argparse.ArgumentParser(description=description)
+
+    return parser
+
+
+def main():
+    """main function"""
+    logging.info("Starting snippets")
+    parser = make_parser()
+    arguments = parser.parse_args(sys.argv[1:])
+
+if __name__ == '__main__':
+    main()
+
+
+
+
+
