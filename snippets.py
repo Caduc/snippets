@@ -22,15 +22,16 @@ def put(name, snippet, filename):
     logging.debug("Write successful")
     return name, snippet
 
-#def get(name, filename):
-#    """ Get snippets that have been previous stored by the put function"""
-#    logging.info ("finding snippet for the name {} from {} ".format(name, filename))
-#    logging.degug ("Opening file for reading")
-#    with open (filename, "r") as fn:
-#       for row in fn:
-#           if name = The-Value-inputted-after-'get'-in-commandline:
-#               Return the associated snippet and /n
-#
+def get(name, filename):
+
+    """ Get snippets that have been previous stored by the put function"""
+    logging.info ("finding snippet for the name {} from {} ".format(name, filename))
+    logging.debug ("Opening file for reading")
+    with open (filename, "r") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if name == row[0]:
+                print "found snippet name {} with a snippet of {} ".format(row[0], row[1])
 
 
 def make_parser():
@@ -48,6 +49,12 @@ def make_parser():
     put_parse.add_argument("snippet", help="the snippet text")
     put_parse.add_argument("filename", default="snippets.csv", nargs="?", help="The snippet filename")
 
+    #subparse for the get command
+    logging.debug("Constructing get subparse")
+    get_parse = subparsers.add_parser("get", help="Get a snippet")
+    get_parse.add_argument("name", help="name of snippet to be retrieved")
+    get_parse.add_argument("filename", default="snippets.csv", nargs="?", help="The snippet filename")
+
     return parser
 
 
@@ -61,9 +68,12 @@ def main():
     command = arguments.pop("command")
 
     if command == "put":
-        name, snippet = put(**arguments)
-        print "Stored '{}' as '{}'".format(snippet, name)
-        pass
+        nameo, snippeto = put(**arguments)  #as of line 62 arguments becomes a dictionary
+        print "Stored '{}' as '{}'".format(snippeto, nameo)
+    
+    if command == "get":
+        snippet = get(**arguments)
+        #print "Retrieved snippet '{}' for name '{}'".format(snippet, arguments["name"])
 
 if __name__ == '__main__':
     main()

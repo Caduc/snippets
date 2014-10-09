@@ -13,3 +13,130 @@ INFO:root:Writing second:put2 to snippets.csv
 DEBUG:root:Opening file for writing
 DEBUG:root:Writing snippet to file
 DEBUG:root:Write successful
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name spam from snippets.csv 
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name spam from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name spam from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name spam from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name spam from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:Writing third:put3 to snippets.csv
+DEBUG:root:Opening file for writing
+DEBUG:root:Writing snippet to file
+DEBUG:root:Write successful
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name third from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name first from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name first from snippets.csv 
+DEBUG:root:Opening file for reading
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:Writing name1:Fred to names.csv
+DEBUG:root:Opening file for writing
+DEBUG:root:Writing snippet to file
+DEBUG:root:Write successful
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:Writing name2:John to names.csv
+DEBUG:root:Opening file for writing
+DEBUG:root:Writing snippet to file
+DEBUG:root:Write successful
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:Writing name3:Jen to names.csv
+DEBUG:root:Opening file for writing
+DEBUG:root:Writing snippet to file
+DEBUG:root:Write successful
+INFO:root:Starting snippets
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparse
+DEBUG:root:Constructing get subparse
+INFO:root:finding snippet for the name name2 from names.csv 
+DEBUG:root:Opening file for reading
